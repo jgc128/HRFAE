@@ -216,7 +216,7 @@ class Trainer(nn.Module):
         self.dec.load_state_dict(torch.load('{:s}/dec.pth.tar'.format(log_dir)))
 
     def load_checkpoint(self, checkpoint_path):
-        state_dict = torch.load(checkpoint_path)
+        state_dict = torch.load(checkpoint_path, map_location='cpu')
         self.enc.load_state_dict(state_dict['enc_state_dict'])
         self.dec.load_state_dict(state_dict['dec_state_dict'])
         self.mlp_style.load_state_dict(state_dict['mlp_style_state_dict'])
