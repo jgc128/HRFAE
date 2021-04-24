@@ -1,1 +1,1 @@
-curl -Lo checkpoint https://partage.imt.fr/index.php/s/7DzqFHQggfJDw79/download
+curl -Lo checkpoint https://mishamoviestorage.blob.core.windows.net/pub/aging/checkpoint
